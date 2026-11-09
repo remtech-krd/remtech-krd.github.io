@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://remtech-krd.github.io/sitemap.xml
