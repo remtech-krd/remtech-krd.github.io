@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Иллюстрация мастера по ремонту техники">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e2338"/>
+      <stop offset="0.55" stop-color="#0a1626"/>
+      <stop offset="1" stop-color="#071120"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#f2c9a6"/>
+      <stop offset="1" stop-color="#dfa87f"/>
+    </linearGradient>
+    <linearGradient id="skinDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0b28c"/>
+      <stop offset="1" stop-color="#cfa07a"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#1d3a5c"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <linearGradient id="shirtLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a4e78"/>
+      <stop offset="1" stop-color="#17324f"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#2b211d"/>
+      <stop offset="1" stop-color="#171010"/>
+    </linearGradient>
+    <linearGradient id="dev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6b32b"/>
+      <stop offset="1" stop-color="#d98a12"/>
+    </linearGradient>
+    <linearGradient id="devScreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2b22"/>
+      <stop offset="1" stop-color="#08201a"/>
+    </linearGradient>
+    <linearGradient id="cable" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="380" r="330" fill="url(#glow)"/>
+
+  <!-- декоративные линии -->
+  <g opacity="0.18" stroke="#22d3ee" stroke-width="1.5" fill="none">
+    <path d="M40 180h110v70h70"/>
+    <path d="M760 220h-90v60h-60"/>
+    <path d="M60 800h90v-70h60"/>
+    <path d="M740 780h-80v-60h-50"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.5">
+    <circle cx="150" cy="250" r="4"/>
+    <circle cx="670" cy="280" r="4"/>
+    <circle cx="150" cy="730" r="4"/>
+    <circle cx="690" cy="720" r="4"/>
+  </g>
+
+  <!-- плечи / торс -->
+  <path d="M96 1000c0-196 118-360 304-360s304 134 304 360z" fill="url(#shirt)"/>
+  <path d="M96 1000c0-196 118-360 304-360v360z" fill="url(#shirtLight)" opacity="0.55"/>
+
+  <!-- воротник -->
+  <path d="M330 646l70 84 70-84 46 30-70 108h-92l-70-108z" fill="#0e2138"/>
+  <path d="M400 760v240" stroke="#0b1a2c" stroke-width="5" opacity="0.6"/>
+  <g fill="#8fb4d8" opacity="0.75">
+    <circle cx="400" cy="836" r="5"/>
+    <circle cx="400" cy="906" r="5"/>
+  </g>
+
+  <!-- шея -->
+  <path d="M361 500h78v116c0 24 9 46 9 64 0 18-21 30-48 30s-48-12-48-30c0-18 9-40 9-64z" fill="url(#skinDark)"/>
+
+  <g transform="translate(0,60)">
+  <!-- уши -->
+  <ellipse cx="292" cy="404" rx="20" ry="30" fill="url(#skinDark)"/>
+  <ellipse cx="508" cy="404" rx="20" ry="30" fill="url(#skinDark)"/>
+
+  <!-- голова -->
+  <ellipse cx="400" cy="382" rx="112" ry="132" fill="url(#skin)"/>
+
+  <!-- волосы -->
+  <path d="M288 372c-8-92 40-152 112-152s120 60 112 152c-14-30-26-46-40-56-26 18-64 26-118 20-28-3-48-10-66 36z" fill="url(#hair)"/>
+  <path d="M296 356c8-58 44-92 104-92 58 0 94 32 104 88-18-22-44-34-78-34-40 0-70 12-96 30-14 9-24 12-34 8z" fill="#33261f" opacity="0.85"/>
+
+  <!-- брови -->
+  <path d="M336 366c14-9 32-10 46-4" stroke="#241a15" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M418 362c14-6 32-5 46 4" stroke="#241a15" stroke-width="9" stroke-linecap="round" fill="none"/>
+
+  <!-- глаза -->
+  <g>
+    <ellipse cx="352" cy="398" rx="16" ry="13" fill="#fdf6ef"/>
+    <ellipse cx="448" cy="398" rx="16" ry="13" fill="#fdf6ef"/>
+    <circle cx="354" cy="399" r="7.5" fill="#20303f"/>
+    <circle cx="450" cy="399" r="7.5" fill="#20303f"/>
+    <circle cx="356.5" cy="396" r="2.4" fill="#ffffff"/>
+    <circle cx="452.5" cy="396" r="2.4" fill="#ffffff"/>
+  </g>
+
+  <!-- нос -->
+  <path d="M398 414c-4 14-8 22-4 28 4 5 12 6 16 2" stroke="#c9946f" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- улыбка -->
+  <path d="M366 466c18 16 50 18 68 0" stroke="#a9613f" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- щетина -->
+  <path d="M318 452c10 46 44 70 82 70s72-24 82-70c-8 54-40 86-82 86s-74-32-82-86z" fill="#3a2b24" opacity="0.22"/>
+  </g>
+
+  <!--Рука с мультиметром -->
+  <path d="M556 1000c-6-118 16-196 74-232l58 92c-32 24-44 66-46 140z" fill="url(#shirtLight)"/>
+  <path d="M690 730c26-8 52 6 60 32 6 20-4 40-22 48l-58 22-40-74z" fill="url(#skin)"/>
+
+  <!-- мультиметр -->
+  <g transform="rotate(-14 640 690)">
+    <rect x="566" y="620" width="150" height="196" rx="18" fill="url(#dev)"/>
+    <rect x="584" y="642" width="114" height="62" rx="8" fill="url(#devScreen)"/>
+    <text x="641" y="684" font-family="Consolas,monospace" font-size="30" fill="#4ade80" text-anchor="middle">12.4</text>
+    <circle cx="641" cy="740" r="26" fill="#8a5a05" opacity="0.55"/>
+    <circle cx="641" cy="740" r="16" fill="#f8d68a"/>
+    <path d="M641 740l12-14" stroke="#6b4304" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#fde68a" opacity="0.6">
+      <rect x="590" y="782" width="16" height="8" rx="4"/>
+      <rect x="614" y="782" width="16" height="8" rx="4"/>
+      <rect x="638" y="782" width="16" height="8" rx="4"/>
+    </g>
+  </g>
+
+  <!-- провода щупов -->
+  <path d="M600 812c-40 34-52 78-48 128" stroke="#c2410c" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M676 806c46 26 62 66 62 118" stroke="#b91c1c" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M552 946l-10 34" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M738 930l14 30" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- карман с инструментом -->
+  <rect x="246" y="806" width="86" height="104" rx="10" fill="#0f2540"/>
+  <rect x="262" y="782" width="12" height="46" rx="6" fill="#cbd5e1"/>
+  <rect x="284" y="774" width="12" height="54" rx="6" fill="#94a3b8"/>
+  <rect x="306" y="788" width="12" height="40" rx="6" fill="#e2e8f0"/>
+</svg>
