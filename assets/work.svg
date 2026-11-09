@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800" role="img" aria-label="Иллюстрация ремонта электроники">
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2a24"/>
+      <stop offset="1" stop-color="#06120f"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2e8f0"/>
+      <stop offset="0.5" stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+    <radialGradient id="icGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="800" fill="#060d14"/>
+  <ellipse cx="500" cy="420" rx="420" ry="300" fill="#22d3ee" opacity="0.10" filter="url(#soft)"/>
+
+  <!-- плата -->
+  <g transform="rotate(-6 500 430)">
+    <rect x="120" y="170" width="760" height="520" rx="26" fill="url(#board)" stroke="#12483c" stroke-width="3"/>
+
+    <!-- дорожки -->
+    <g stroke="#1f9e7a" stroke-width="3" fill="none" opacity="0.7">
+      <path d="M170 240h180v-30h120"/>
+      <path d="M170 300h120v70h160"/>
+      <path d="M170 430h210v40h90"/>
+      <path d="M170 620h150v-60h120"/>
+      <path d="M830 250h-160v60h-100"/>
+      <path d="M830 400h-190v-50h-90"/>
+      <path d="M830 560h-140v-70h-120"/>
+      <path d="M430 640v-70"/>
+      <path d="M520 240v90"/>
+    </g>
+    <g fill="#22d3ee" opacity="0.55">
+      <circle cx="350" cy="240" r="6"/>
+      <circle cx="410" cy="370" r="6"/>
+      <circle cx="380" cy="470" r="6"/>
+      <circle cx="440" cy="560" r="6"/>
+      <circle cx="670" cy="310" r="6"/>
+      <circle cx="730" cy="350" r="6"/>
+      <circle cx="690" cy="490" r="6"/>
+      <circle cx="560" cy="330" r="6"/>
+    </g>
+
+    <!-- большой чип -->
+    <rect x="430" y="300" width="200" height="160" rx="10" fill="#0a1a24" stroke="#2dd4bf" stroke-width="2.5"/>
+    <rect x="450" y="320" width="160" height="120" rx="6" fill="#0f2430"/>
+    <g stroke="#3f8f7d" stroke-width="2" opacity="0.8">
+      <path d="M470 340h120M470 362h120M470 384h120M470 406h120"/>
+    </g>
+    <circle cx="640" cy="330" r="10" fill="#fbbf24" opacity="0.8"/>
+
+    <!-- мелкие чипы -->
+    <g>
+      <rect x="200" y="250" width="90" height="56" rx="6" fill="#0b1c26" stroke="#1f6f5c" stroke-width="2"/>
+      <rect x="210" y="380" width="70" height="70" rx="6" fill="#0b1c26" stroke="#1f6f5c" stroke-width="2"/>
+      <rect x="700" y="240" width="80" height="50" rx="6" fill="#0b1c26" stroke="#1f6f5c" stroke-width="2"/>
+      <rect x="720" y="520" width="90" height="64" rx="6" fill="#0b1c26" stroke="#1f6f5c" stroke-width="2"/>
+    </g>
+
+    <!-- конденсаторы -->
+    <g fill="#0e7490" stroke="#22d3ee" stroke-width="2">
+      <circle cx="220" cy="520" r="24"/>
+      <circle cx="280" cy="560" r="18"/>
+      <circle cx="780" cy="430" r="22"/>
+    </g>
+
+    <!-- разъём -->
+    <rect x="180" y="610" width="170" height="46" rx="6" fill="#132a35" stroke="#2b6b7a" stroke-width="2"/>
+    <g stroke="#fbbf24" stroke-width="5" opacity="0.85">
+      <path d="M196 622v22M216 622v22M236 622v22M256 622v22M276 622v22M296 622v22M316 622v22"/>
+    </g>
+  </g>
+
+  <!-- отвёртка -->
+  <g transform="rotate(28 700 380)">
+    <rect x="672" y="180" width="56" height="230" rx="26" fill="url(#handle)"/>
+    <g fill="#083344" opacity="0.85">
+      <rect x="672" y="230" width="56" height="14"/>
+      <rect x="672" y="270" width="56" height="14"/>
+      <rect x="672" y="310" width="56" height="14"/>
+    </g>
+    <rect x="690" y="404" width="20" height="120" rx="5" fill="url(#metal)"/>
+    <path d="M695 524h10l-5 42z" fill="#cbd5e1"/>
+    <rect x="676" y="166" width="48" height="26" rx="12" fill="#0b3b4a"/>
+  </g>
+
+  <!-- мультиметр -->
+  <g transform="rotate(-18 250 600)">
+    <rect x="180" y="560" width="150" height="196" rx="18" fill="#f6b32b"/>
+    <rect x="198" y="582" width="114" height="62" rx="8" fill="#0b2b22"/>
+    <text x="255" y="624" font-family="Consolas,monospace" font-size="28" fill="#4ade80" text-anchor="middle">12.4</text>
+    <circle cx="255" cy="680" r="24" fill="#8a5a05" opacity="0.5"/>
+    <circle cx="255" cy="680" r="15" fill="#f8d68a"/>
+  </g>
+
+  <!-- блики -->
+  <g fill="#ffffff" opacity="0.06">
+    <circle cx="820" cy="140" r="90"/>
+    <circle cx="140" cy="700" r="70"/>
+  </g>
+</svg>
